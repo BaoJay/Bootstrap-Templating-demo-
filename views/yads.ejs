@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YAD Members</title>
-</head>
+<%- include('partials/head') %>
 <body>
+    <!-- Bootstrap Navbar -->
+    <%- include('partials/navbar') %>
+
     <h4>Danh sách học viên khóa YAD Bootcamp</h4>
     <!-- EJS will turn a variable array into a string -->
     <h4><%= yadMember %></h4>
@@ -15,5 +13,8 @@
             <li><%= yad %></li>
         <% } %>
     </ul>
+
+    <!-- Footer -->
+    <%- include('partials/footer') %>    
 </body>
 </html>
